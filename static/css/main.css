@@ -1,22 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  font: inherit;
+}
 
+html {
+  font-size: 100%;
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  font-weight: 400;
+}
 
+.container {
+  width: 80%;
+  max-width: 1280px;
+  margin: 100px auto;
+}
 
+.cf:after {
+    content:"";
+    display:table;
+    clear:both;
+}
 
+header {
+  width: 80%;
+  max-width: 1280px;
+  margin: 60px auto 0;
+}
+header h1 {
+  float:left;
+}
+.navlinks {
+  list-style: none;
+  float: right;
+}
 
+.navlinks li {
+  display: inline-block;
+  margin-right: 30px;
+}
 
+.navlinks li:last-child {
+  margin-right: 0;
+}
 
+h1 {
+  font-weight: 600;
+  font-size: inherit;
+  line-height: inherit;
+}
 
+h2 {
+  font-weight: 400;
+  color:#999;
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 12px;
+}
 
+h3 {
+  font-weight: 600;
+  font-size: inherit;
+}
 
+.greeting {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
 
+a:link, a:visited {
+  color: #FF3355;
+  text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fff;
+  transition: all .15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  outline: none;
+}
 
+a:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #FFCCD5;
+}
+a:active {
+  border-bottom: 2px solid #FF3355;
+}
 
+p {
+   margin-bottom: 24px;
+}
 
+@media only screen and (min-width: 768px) {
 
-
-
-
+}
