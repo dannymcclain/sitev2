@@ -55,6 +55,27 @@ header h1 {
   margin-right: 0;
 }
 
+.navlinks li.btn a {
+  font-size: 13px;
+  background-color: rgba(255, 51, 85, 0.05);
+  padding: 3px 6px!important;
+  border-radius: 4px;
+  border: 1px solid #FF3355!important;
+}
+.navlinks li.btn a:hover {
+  color: #fff;
+  background-color: rgba(255, 51, 85, 1.0);
+  padding: 0 4px;
+  border-radius: 4px;
+  border: 1px solid #FF3355;
+}
+
+.navlinks li.btn a:active {
+  color: #fff;
+  background-color: rgba(230, 23, 57, 1.0);
+  border: 1px solid #E61739;
+}
+
 h1 {
   font-weight: 600;
   font-size: inherit;
@@ -87,7 +108,7 @@ h3 {
   font-weight: 400;
 }
 
-a:link, a:visited {
+.navlinks li a:link, .navlinks li a:visited {
   color: #FF3355;
   text-decoration: none;
   padding-bottom: 8px;
@@ -96,12 +117,29 @@ a:link, a:visited {
   outline: none;
 }
 
-a:hover {
+.navlinks li.active a:link, .navlinks li.active a:visited {
+  color: #999;
+  text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fff;
+  transition: all .15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  outline: none;
+}
+
+.navlinks li a:hover {
   padding-bottom: 3px;
   border-bottom: 2px solid #FFCCD5;
 }
-a:active {
+.navlinks li a:active {
   border-bottom: 2px solid #FF3355;
+}
+
+.navlinks li.active a:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #E6E6E6;
+}
+.navlinks li.active a:active {
+  border-bottom: 2px solid #999;
 }
 
 p {
