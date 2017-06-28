@@ -76,6 +76,16 @@ header h1 {
   border: 1px solid #E61739;
 }
 
+.sidebar {
+  width: 100%;
+  margin: 0;
+}
+
+.main-content {
+  width: 100%;
+  margin: 0 0 100px 0;
+}
+
 h1 {
   font-weight: 600;
   font-size: inherit;
@@ -147,5 +157,15 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .sidebar {
+    width: 32%;
+    margin: 0 4% 0 0;
+    float: left;
+  }
 
+  .main-content {
+    width: 64%;
+    margin: 0 0 100px 0;
+    float: left;
+  }
 }
