@@ -1,2 +1,3 @@
 # Ignore the Cactus build folder
 .build
+.DS_Store
