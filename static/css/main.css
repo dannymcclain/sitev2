@@ -131,7 +131,7 @@ h3 {
   color: #999;
   text-decoration: none;
   padding-bottom: 8px;
-  border-bottom: 2px solid #fff;
+  border-bottom: none;
   transition: all .15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
   outline: none;
 }
@@ -145,8 +145,7 @@ h3 {
 }
 
 .navlinks li.active a:hover {
-  padding-bottom: 3px;
-  border-bottom: 2px solid #E6E6E6;
+  border-bottom: none;
 }
 .navlinks li.active a:active {
   border-bottom: 2px solid #999;
