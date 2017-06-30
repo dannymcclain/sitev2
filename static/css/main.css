@@ -96,6 +96,17 @@ header h1 {
   margin-bottom: 48px;
 }
 
+.gallery img {
+  width: 48%;
+  height: auto;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  float: left;
+}
+.gallery img:nth-child(even) {
+  margin-right: 0;
+}
+
 h1 {
   font-weight: 600;
   font-size: inherit;
@@ -230,4 +241,16 @@ p {
     margin: 0 0 100px 0;
     float: left;
   }
+}
+
+.b-lazy {
+    -webkit-transition: opacity 300ms ease-in-out;
+       -moz-transition: opacity 300ms ease-in-out;
+         -o-transition: opacity 300ms ease-in-out;
+            transition: opacity 300ms ease-in-out;
+             max-width: 100%;
+               opacity: 0;
+}
+.b-lazy.b-loaded {
+               opacity: 1;
 }
