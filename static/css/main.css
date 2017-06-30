@@ -78,12 +78,16 @@ header h1 {
 
 .sidebar {
   width: 100%;
-  margin: 0;
+  margin: 0 0 48px 0;
 }
 
 .main-content {
   width: 100%;
   margin: 0 0 100px 0;
+}
+
+.main-content section {
+  margin-bottom: 48px;
 }
 
 h1 {
@@ -97,6 +101,12 @@ h1 {
   line-height: 52px;
   font-weight: 400;
   margin-bottom:120px;
+}
+
+.callout {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 h2 {
@@ -149,6 +159,22 @@ h3 {
 }
 .navlinks li.active a:active {
   border-bottom: 2px solid #999;
+}
+
+a:link, a:visited {
+  color: #FF3355;
+  text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fff;
+  transition: all .15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  outline: none;
+}
+a:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #FFCCD5;
+}
+a:active {
+  border-bottom: 2px solid #FF3355;
 }
 
 p {
