@@ -96,15 +96,20 @@ section {
   margin-bottom: 48px;
 }
 
-.gallery img {
-  width: 48%;
-  height: auto;
-  margin-right: 4%;
-  margin-bottom: 4%;
-  float: left;
+.wrap {
+  background-color: #F7F7F7;
+  padding: 48px 0;
 }
-.gallery img:nth-child(even) {
-  margin-right: 0;
+
+.wrap > .container {
+  margin: 0 auto!important;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 4%;
 }
 
 h1 {
@@ -227,7 +232,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .container {
-    margin: 100px auto;
+    margin: 100px auto 36px;
   }
 
   .sidebar {
